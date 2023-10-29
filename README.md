@@ -1,52 +1,57 @@
 # Palo Alto Source NAT
 
-<h1>Active Directory Home Lab </h1>
-
  ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
 <h2>Description</h2>
-The Active Directory home lab is a controlled and isolated environment for learning and experimenting with Microsoft's Active Directory services. It allows you to gain hands-on experience in setting up, configuring, and managing AD domains, users, security policies, and more. This lab typically utilizes virtualization technology and Windows Server operating systems, providing a safe space to practice without impacting production systems or networks.
+In this hands-on lab, we will learn how to configure Source Network Address Translation (Source NAT or SNAT) on a Palo Alto firewall to enable inside users to connect to both the internet and a Demilitarized Zone (DMZ). Source NAT is a fundamental network security feature that allows you to rewrite the source IP address of outgoing packets, providing essential network protection and enabling communication between different network segments.
+
 <br />
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b> Eve ng </b> 
+- <b>VM Workstation </b>
+- <b> Palo Alto Firewall </b>
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b> Vm Workstation Pro </b> 
 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Creating Users: <br/>
-<img src="https://i.imgur.com/HoKMOe1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Setup devices <br/>
+<img src="https://i.imgur.com/RP2QiHE.jpg" height="80%" width="80%" alt="Palo Alto Source NAT"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Configure Zones for interfaces:  <br/>
+<img src="https://i.imgur.com/lNRc5uB.jpg" height="80%" width="80%" alt="Zones"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Interface setup: <br/>
+<img src="https://i.imgur.com/F6QnEuw.png" height="80%" width="80%" alt="Interfaces"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Security Policy : <br/>
+<img src="https://i.imgur.com/gQSiAus.png" height="80%" width="80%" alt=""/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+NAT policy:  <br/>
+<img src="https://i.imgur.com/h8UlWQh.png" height="80%" width="80%" alt="NAT"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+PC configuration :  <br/>
+<img src="https://i.imgur.com/J8mml4Q.png" height="80%" width="80%" alt="PC"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Configure Virtual Route:  <br/>
+<img src="https://i.imgur.com/ji269BR.png" height="80%" width="80%" alt="Virtual Route"/>
 </p>
+Test internet connectivity after assigning DNS : <br/>
+<img src="https://i.imgur.com/nNTef9A.png" height="80%" width="80%" alt=""/>
+<br />
+<br />
+
 
 <!--
  ```diff
