@@ -1,7 +1,5 @@
 # Palo Alto Source NAT
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
-
 <h2>Description</h2>
 In this hands-on lab, we will learn how to configure Source Network Address Translation (Source NAT or SNAT) on a Palo Alto firewall to enable inside users to connect to both the internet and a Demilitarized Zone (DMZ). Source NAT is a fundamental network security feature that allows you to rewrite the source IP address of outgoing packets, providing essential network protection and enabling communication between different network segments.
 
